@@ -1,0 +1,60 @@
+/* fred-api-app/src/App.css */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  margin-bottom: 30px;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  font-weight: bold;
+}
+
+.controls select,
+.controls input[type="date"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.data-display {
+  margin-top: 20px;
+  max-height: 500px; /* Limit height for scrollability */
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
