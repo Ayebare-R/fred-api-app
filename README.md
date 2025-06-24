@@ -1,11 +1,27 @@
-# Getting Started with Create React App
+# US Economic Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React/Node.js dashboard displaying US economic indicators from FRED API.
 
-## Available Scripts
+## Features
+- Real-time GDP, Unemployment & Treasury data
+- Interactive charts
+- Historical trend analysis
 
-To run this project:
+## Setup
+1. Get FRED API key at [research.stlouisfed.org](https://research.stlouisfed.org/useraccount/apikey)
+2. Create `.env` in `/server`:
+```FRED_API_KEY=your_key_here```
 
-1. cd into the server directory and run node server.js
+## Installation
+```bash
+# Backend
+cd server && npm install
 
-2. In a second terminal run npm start within the main directory
+# Frontend (root)
+npm install
+
+# Terminal 1 (backend)
+cd server && npm start
+
+# Terminal 2 (frontend)
+npm start
